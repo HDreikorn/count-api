@@ -8,6 +8,10 @@ In the project directory, you can run:
 
 ## To Run Locally:
 
+If using unzipped file submitted, you will have to run npm instal first to download the node modules.
+
+### `npm install`
+
 ### `npm start`
 
 Runs the app in the development mode.\
