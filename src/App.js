@@ -2,6 +2,7 @@ import { useState } from "react";
 import { sendHitCount } from "./api/endpoints";
 import "./App.css";
 import Button from "./components/button";
+import CountDisplay from "./components/countDisplay";
 
 function App() {
   const [hits, setHits] = useState("");
@@ -11,9 +12,11 @@ function App() {
   };
 
   return (
-    <div className="App h-screen flex flex-wrap content-center justify-center">
-      <div>{hits && <h1>Hits to API: {hits}</h1>}</div>
-      <Button label="Click to Hit API!" onClick={handleButtonClick} />
+    <div className="App h-screen px-3 py-16 bg-orange-600">
+      <div className="max-w-md mx-auto bg-white p-3 rounded">
+        {hits && <CountDisplay hits={hits} />}
+        <Button label="Click to Hit API!" onClick={handleButtonClick} />
+      </div>
     </div>
   );
 }
