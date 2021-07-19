@@ -22,3 +22,7 @@ You will also see any lint errors in the console.
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+## Future Updates
+
+Given that this API has many endpoints, a cool feature to add would be the stats data. Further we could use the library React-Query to to ensure the most up to date data on the number of hits instead of only updating when the button is clicked.
